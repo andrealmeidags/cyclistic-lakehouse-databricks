@@ -33,7 +33,7 @@ O pipeline foi estruturado seguindo as melhores práticas de Lakehouse moderno, 
   * Extração de atributos temporais: dia da semana, mês, ano, hora do dia e partes do dia.
 * **Gold (Curated / Analytics Zone):**
   * Tabela fato de viagens e tabela sumarizada pré-agregada.
-  * **Otimização de BI:** Redução do volume de processamento de dezenas de milhões de linhas brutas para uma tabela analítica agregada de **apenas ~736 KB**, contornando limites de memória de ferramentas de visualização e eliminando custos desnecessários de computação em nuvem.
+  * **Otimização de BI:** Redução do volume de processamento de dezenas de milhões de linhas brutas para uma tabela analítica agregada de **apenas ~29 MB**, contornando limites de memória de ferramentas de visualização e eliminando custos desnecessários de computação em nuvem.
 
 ---
 
