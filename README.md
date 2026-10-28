@@ -47,10 +47,9 @@ O pipeline foi estruturado seguindo as melhores práticas de Lakehouse moderno, 
      * `Média-Longa Distância`: $1,7\text{ a }2,9\text{ km}$.
      * `Longa Distância`: acima de $2,9\text{ km}$.
 2. **Cálculo Rigoroso de Métricas Ponderadas:**
-   * Para evitar a distorção da "média das médias" em tabelas agregadas no Looker Studio, a camada Gold expõe `SUM(total_minutos)` e `SUM(total_km)`. Os cartões de KPI utilizam média ponderada real:
-     ```text
-Duração Média = SUM(total_minutos) / SUM(qtd_viagens)
-     ```
+   * Para evitar a distorção da "média das médias" em tabelas agregadas no Looker Studio, a camada Gold expõe `SUM(total_minutos)` e `SUM(total_km)`. Os cartões de KPI utilizam média ponderada real: `Duração Média = SUM(total_minutos) / SUM(qtd_viagens)`.
+
+
 3. **Ordenação Lógica de Categorias:**
    * Chaves numéricas de ordenação (`id_distancia`, `id_duracao_viagem`) e padronização ordinal de dimensões garantem que os eixos gráficos sejam renderizados na ordem analítica correta.
 
